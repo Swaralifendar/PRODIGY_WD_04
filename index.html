@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <img src="C:\Users\swara\Downloads\images (1).jpeg" alt="Your Photo" class="profile-photo">
+            <h1>Hi, I'm Swarali Fendar</h1>
+            <p><br><br><br>I'm a web developer specializing in creating beautiful and functional websites.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Swarali Fendar, and I am a passionate IT Engineer with a strong background in software development and web technologies. I hold a degree in Information Technology and have accumulated several years of experience in the industry, working on a diverse range of projects.</p>
+    
+    <p>My expertise lies in a variety of programming languages and frameworks. I am proficient in:</p>
+    <ul>
+        <li><strong>C</strong>: Skilled in system-level programming, algorithm design, and optimization.</li>
+        <li><strong>C++</strong>: Experienced in object-oriented programming, game development, and performance-critical applications.</li>
+        <li><strong>Java</strong>: Competent in building robust, scalable applications, including web services and enterprise solutions.</li>
+        <li><strong>Python</strong>: Adept in scripting, data analysis, machine learning, and automation.</li>
+        <li><strong>React</strong>: Proficient in building dynamic, interactive user interfaces for web applications.</li>
+        <li><strong>HTML & CSS</strong>: Skilled in crafting responsive and accessible web designs, ensuring a seamless user experience across devices.</li>
+        <li><strong>JavaScript</strong>: Experienced in front-end development, enabling dynamic and engaging web functionalities.</li>
+    </ul>
+    
+    <p>I am continuously learning and exploring new advancements in the field of IT. My goal is to leverage my technical expertise and creativity to build innovative solutions that make a positive impact. When I'm not coding, you can find me exploring the latest tech trends, participating in coding challenges, or contributing to open-source projects.</p>
+    <p>Feel free to reach out if you would like to discuss potential collaborations or if you just want to talk tech!</p>
+</section>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>StopWatch Web Application</p>
+                <button onclick="openModal('modal1')">View Details</button>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Tic-Tac-Toe</p>
+                <button onclick="openModal('modal2')">View Details</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <p id="formMessage"></p>
+
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/yourwhatsappphonenumber" target="_blank" class="social-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Swarali Fendar. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h3>Project 1</h3>
+            <p>[Detailed description of your project]</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h3>Project 2</h3>
+            <p>[Detailed description of your project]</p>
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
